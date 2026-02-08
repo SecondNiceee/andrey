@@ -2896,7 +2896,7 @@ body {
   }
 }
 
-/* Анимация появления снизу вверх */
+/* Анимация появлен��я снизу вверх */
 .partner__img,
 .par__card {
   opacity: 0;
@@ -3078,6 +3078,52 @@ body {
   border-radius: 50%;
   border-top-color: #fff;
   animation: spin 1s linear infinite;
+}
+
+/* Prime card image overrides */
+.card.prime .card-img-abs {
+  width: 336px;
+  right: -13vw;
+}
+
+@media (min-width: 901px) {
+  .card.prime .card-img-abs {
+    width: 336px;
+    right: -13vw;
+    top: var(--img-top, -60px);
+    bottom: var(--img-bottom, -60px);
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .card.prime .card-img-abs {
+    width: 336px;
+    right: -13vw;
+  }
+}
+
+@media (min-width: 1500px) {
+  .card.prime .card-img-abs {
+    width: 336px;
+    right: -13vw;
+  }
+}
+
+@media (min-width: 1900px) {
+  .card.prime .card-img-abs {
+    width: 560px;
+    right: -18vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .card.prime .card-img-abs {
+    width: 40vw;
+    right: auto;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes spin {
