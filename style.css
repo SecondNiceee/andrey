@@ -3080,16 +3080,36 @@ body {
   animation: spin 1s linear infinite;
 }
 
-/* Prime card image overrides — same size on ALL devices */
-.card.prime .card-img-abs {
-  width: 336px !important;
-  right: -13vw !important;
-  left: auto !important;
-  transform: none !important;
-  position: absolute !important;
-  top: -60px !important;
-  bottom: -60px !important;
-  height: auto !important;
+/* Prime card image overrides — desktop only (>=900px) */
+@media (min-width: 901px) {
+  .card.prime .card-img-abs {
+    width: 300px !important;
+    right: -13vw !important;
+    left: auto !important;
+    transform: none !important;
+    position: absolute !important;
+    top: -60px !important;
+    bottom: -60px !important;
+    height: auto !important;
+  }
+}
+
+/* Prime cards on mobile — image behind text, same as other flavors */
+@media (max-width: 900px) {
+  .card.prime .card-img-abs {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    z-index: 2;
+    pointer-events: none;
+    display: block;
+    margin: 0;
+    right: auto;
+    bottom: auto;
+    height: auto;
+  }
 }
 
 @keyframes spin {
