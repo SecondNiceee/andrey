@@ -85,15 +85,16 @@ window.addEventListener('DOMContentLoaded', function () {
   if (firstFlavor && !firstFlavor.classList.contains('active')) {
     firstFlavor.classList.add('active');
   }
-  // Показываем все карточки по умолчанию (категория "Все")
+  // Показываем все карточки по умолчанию (категория "Все"), исключая "soon" и "prime"
   const cards = Array.from(document.querySelectorAll('.card'));
+  const defaultCards = cards.filter((card) => !card.classList.contains('soon') && !card.classList.contains('prime'));
   cards.forEach((card) => {
     card.style.display = 'none';
   });
-  cards.forEach((card, i) => {
+  defaultCards.forEach((card, i) => {
     card.style.display = i < 4 ? '' : 'none';
   });
-  showMoreButton(cards);
+  showMoreButton(defaultCards);
   if (window.innerWidth < 432) {
     document.querySelectorAll('.bottles-down-mob-img').forEach((el) => {
       el.classList.add('visible');
@@ -159,8 +160,21 @@ document.querySelectorAll('.flavors-menu li[data-flavor]').forEach((link) => {
       showMoreButton(filteredCards);
       return;
     }
+    if (flavor === 'prime') {
+      cards.forEach((card) => {
+        if (card.classList.contains('prime')) {
+          filteredCards.push(card);
+        }
+        card.style.display = 'none';
+      });
+      filteredCards.forEach((card, i) => {
+        card.style.display = i < 4 ? '' : 'none';
+      });
+      showMoreButton(filteredCards);
+      return;
+    }
     if (flavor === 'все') {
-      filteredCards = cards.filter((card) => !card.classList.contains('soon'));
+      filteredCards = cards.filter((card) => !card.classList.contains('soon') && !card.classList.contains('prime'));
       cards.forEach((card) => (card.style.display = 'none'));
       filteredCards.forEach((card, i) => {
         card.style.display = i < 4 ? '' : 'none';
@@ -179,7 +193,7 @@ document.querySelectorAll('.flavors-menu li[data-flavor]').forEach((link) => {
         } else if (flavor === 'новинки' && card.classList.contains('new')) {
           shouldShow = true;
         }
-        if (card.classList.contains('soon')) {
+        if (card.classList.contains('soon') || card.classList.contains('prime')) {
           card.style.display = 'none';
           return;
         }
