@@ -3098,10 +3098,10 @@ body {
 @media (max-width: 900px) {
   .card.prime .card-img-abs {
     position: absolute;
-    top: -40px;
+    top: -23px;
     left: 50%;
     transform: translateX(-50%);
-    width: 50vw;
+    width: 30vw;
     z-index: 2;
     pointer-events: none;
     display: block;
