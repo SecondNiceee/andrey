@@ -3084,7 +3084,7 @@ body {
 @media (min-width: 901px) {
   .card.prime .card-img-abs {
     width: 300px !important;
-    right: -13vw !important;
+    right: -12vw !important;
     left: auto !important;
     transform: none !important;
     position: absolute !important;
