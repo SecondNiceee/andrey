@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="icon" type="image/svg+xml" href="./img/logo.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>OGGO Menu</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "OGGO",
+        "url": "https://oggomenu.ru/",
+        "logo": "https://oggomenu.ru/img/logo.svg"
+      }
+    </script>
+  </head>
+  <body>
+    <div class="header-row">
+      <img src="./img/logo.png" alt="OGGO Logo" class="logo-left" />
+      <nav class="menu">
+        <a href="index.html#hero-section" class="menu__link">Главная</a>
+        <a href="index.html#main-content" class="menu__link">О Нас</a>
+        <a href="index.html#vkus-block" class="menu__link">Линейки</a>
+        <a href="./partner.html" class="menu__link menu__link--active">Дистрибьюторы</a>
+        <a href="https://t.me/oggoliquid" target="_blank">
+          <img src="./img/btn-premium.svg" alt="PREMIUM" class="menu__premium" />
+        </a>
+      </nav>
+      <img src="./img/burger.svg" alt="Меню" class="burger-menu" id="burgerOpen" />
+    </div>
+    <div class="mobile-menu-overlay" id="mobileMenu">
+      <div class="mobile-menu">
+        <img src="./img/close.svg" alt="Закрыть" class="mobile-menu__close" id="burgerClose" />
+        <nav class="mobile-menu__nav">
+          <a href="index.html#hero-section" class="mobile-menu__link">Главная</a>
+          <a href="index.html#main-content" class="mobile-menu__link">О Нас</a>
+          <a href="index.html#vkus-block" class="mobile-menu__link">Линейки</a>
+          <a href="./partner.html" class="menu__link mobile-menu__link--active">Дистрибьюторы</a>
+        </nav>
+        <a href="https://t.me/oggoliquid" target="_blank">
+          <img src="./img/btn-premium.svg" alt="PREMIUM" class="mobile-menu__premium" />
+        </a>
+      </div>
+    </div>
+    <section class="hero-section-par">
+      <img src="./img/bg.svg" alt="" width="100%" height="auto" />
+      <div class="partner-hero-logos">
+        <img src="./img/hero-partner.png" alt="" class="partner__img" />
+        <img
+          src="./img/logo-par1.png"
+          alt="OGGO.BY"
+          width="30%"
+          class="partner-logo partner-logo--1"
+        />
+        <img
+          src="./img/logo-par3.png"
+          alt="OGGO PREMIUM"
+          width="30%"
+          class="partner-logo partner-logo--3"
+        />
+        <img
+          src="./img/logo-par4.png"
+          alt="OGGO.BY"
+          width="30%"
+          class="partner-logo partner-logo--4"
+        />
+        <img
+          src="./img/logo-par3.png"
+          alt="ПАР ТОВАР"
+          width="30%"
+          class="partner-logo partner-logo--5"
+        />
+        <img
+          src="./img/logo-par3.png"
+          alt="OGGO PREMIUM"
+          width="30%"
+          class="partner-logo partner-logo--6"
+        />
+        <img
+          src="./img/btn-parr.png"
+          alt="ПАР ТОВАР"
+          width="100%"
+          class="partner-btn partner-logo--8"
+        />
+      </div>
+      <img src="./img/bg-vkus.svg" alt="" class="par__bg-vkus" />
+      <img src="./img/bg-dop-down.svg" alt="" class="par__bg-dop" />
+      <img src="./img/bg-par.png" alt="" class="par__bg-par" />
+      <img src="./img/par-card1.png" alt="" width="50%" class="par__card par__card1" />
+      <!-- <img src="./img/par-card3.png" alt="" width="50%" class="par__card par__card3"> -->
+      <img src="./img/par-card4.png" alt="" width="50%" class="par__card par__card4" />
+      <!-- <img src="./img/par-card5.png" alt="" width="50%" class="par__card par__card5"> -->
+      <img src="./img/par-card6.png" alt="" width="50%" class="par__card par__card6" />
+    </section>
+    <div class="bg-down-wrap">
+      <img src="./img/bg-down.svg" alt="Фоновые брызги внизу" class="bg-down-img" />
+    </div>
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-logo-down-row">
+          <img src="./img/logo-down.png" alt="OGGO Logo" class="footer-logo-down" />
+        </div>
+        <div class="footer-col social">
+          <div class="footer-col-title footer-social">Социальные сети</div>
+          <a href="https://t.me/oggoliquid" target="_blank" class="footer-link">Телеграмм</a>
+          <a
+            href="https://www.instagram.com/oggomedia?igsh=OWM1MGxvNXY4YWtp"
+            target="_blank"
+            class="footer-link"
+            >Инстаграм</a
+          >
+        </div>
+        <div class="footer-col docs">
+          <div class="footer-col-title footer-social">Документы</div>
+          <a href="#" class="footer-link">Политика конфиденциальности</a>
+          <a href="https://disk.yandex.ru/d/dgp4ZqCgly8B3w" class="footer-link">Промо-материалы</a>
+          <a href="#" class="footer-link">Публичная оферта</a>
+        </div>
+        <div class="footer-col nav">
+          <div class="footer-col-title">Навигация</div>
+          <a href="index.html#hero-section" class="footer-link">Главная</a>
+          <a href="index.html#main-content" class="footer-link">О нас</a>
+          <a href="index.html#vkus-block" class="footer-link">Линейки</a>
+          <a href="index.html#fake-block" class="footer-link">Остерегайтесь копии</a>
+          <a href="./partner.html" class="footer-link">Дистрибьюторы</a>
+        </div>
+        <div class="footer-disclaimer">
+          Доступ к сайту разрешён только лицам старше 18 лет, являющимся потребителями табака или
+          иной никотинсодержащей продукции, которые не противоречат случаю продажи/отдачи
+          курительных или никотинсодержащих продуктов. Данный сайт не является рекламой, а служит
+          лишь для предоставления достоверной информации о свойствах, характеристиках продукции и не
+          является её заказом/сделкой. Ст. 1 п. 1, ст. 2 п.10 Закона «О защите прав потребителей».
+          Дистанционная продажа и доставка никотинсодержащей продукции не осуществляется.
+        </div>
+        <div class="footer-age">18+</div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

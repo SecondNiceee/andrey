@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>OGGO Menu</title>
+    <link rel="icon" type="image/svg+xml" href="./img/logo.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "OGGO",
+        "url": "https://oggomenu.ru/",
+        "logo": "https://oggomenu.ru/img/logo.svg"
+      }
+    </script>
+  </head>
+  <body>
+    <div class="age-modal-overlay" id="ageModal">
+      <div class="age-modal">
+        <div class="age-modal-title">
+          <span>ПРЕДУПРЕЖДЕНИЕ</span>
+          <div class="age-modal-underline"></div>
+        </div>
+        <div class="age-modal-text">
+          Страницы, которые вы собираетесь смотреть, могут содержать
+          <span class="age-modal-accent">материалы</span>, предназначенные
+          <span class="age-modal-accent">только для взрослых</span>. Чтобы продолжить, вы должны
+          подтвердить, что вам уже исполнилось <span class="age-modal-age">18 лет</span>
+        </div>
+        <div class="age-modal-btns">
+          <img
+            src="./img/no18.svg"
+            alt="Нет, мне нет 18"
+            class="age-btn-img age-btn-no"
+            id="ageNoBtn"
+          />
+          <img
+            src="./img/yes18.svg"
+            alt="Да, мне уже 18 лет"
+            class="age-btn-img age-btn-yes"
+            id="ageYesBtn"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="header-row">
+      <img src="./img/logo.png" alt="OGGO Logo" class="logo-left" />
+      <nav class="menu">
+        <a href="#hero-section" class="menu__link menu__link--active">Главная</a>
+        <a href="#main-content" class="menu__link">О Нас</a>
+        <a href="#vkus-block" class="menu__link">Линейки</a>
+        <a href="./partner.html" class="menu__link">Дистрибьюторы</a>
+        <a href="https://t.me/oggoliquid" target="_blank">
+          <img src="./img/btn-premium.svg" alt="PREMIUM" class="menu__premium" />
+        </a>
+      </nav>
+      <img src="./img/burger.svg" alt="Меню" class="burger-menu" id="burgerOpen" />
+    </div>
+    <div class="mobile-menu-overlay" id="mobileMenu">
+      <div class="mobile-menu">
+        <img src="./img/close.svg" alt="Закрыть" class="mobile-menu__close" id="burgerClose" />
+        <nav class="mobile-menu__nav">
+          <a href="#hero-section" class="mobile-menu__link mobile-menu__link--active">Главная</a>
+          <a href="#main-content" class="mobile-menu__link">О Нас</a>
+          <a href="#vkus-block" class="mobile-menu__link">Линейки</a>
+          <a href="./partner.html" class="menu__link">Дистрибьюторы</a>
+        </nav>
+        <a href="https://t.me/oggoliquid" target="_blank">
+          <img src="./img/btn-premium.svg" alt="PREMIUM" class="mobile-menu__premium" />
+        </a>
+      </div>
+    </div>
+    <section class="hero-section" id="hero-section">
+      <div class="bottles-center">
+        <img src="./img/bottle1.png" alt="OGGO Bottle 1" class="bottle bottle1" />
+        <img src="./img/bottle2.png" alt="OGGO Bottle 2" class="bottle bottle2" />
+        <div class="hero-premium-marquee">
+          <span class="hero-premium-text"
+            >PREMIUM PREMIUM PREMIUM PREMIUM PREMIUM PREMIUM PREMIUM PREMIUM</span
+          >
+        </div>
+        <div class="hero-text2-marquee">
+          <span class="hero-text2-marquee-text"
+            >PEACH MANGO KIWI APPLE STRAWBERRY PEACH MANGO KIWI APPLE STRAWBERRY PEACH MANGO KIWI
+            APPLE STRAWBERRY</span
+          >
+        </div>
+      </div>
+    </section>
+    <section class="main-content" id="main-content">
+      <section class="info-block" id="about">
+        <img src="./img/bg-text1.svg" alt="Info Text" />
+        <img src="./img/bgbg.svg" alt="" class="info-bgbg" />
+        <img src="./img/img-berry.svg" alt="Berry" class="info-berry" />
+      </section>
+      <section class="premium-block">
+        <img src="./img/block-premium.png" alt="OGGO Premium" class="block-premium" />
+        <div class="premium-right">
+          <img src="./img/bg-text2.svg" alt="" class="bg-text2" />
+          <img src="./img/berry.svg" alt="" class="block-berry" />
+        </div>
+      </section>
+      <section class="partner-block">
+        <img src="./img/bg-partner.svg" alt="" class="bg-partner" />
+        <img src="./img/bg-text3.svg" alt="" class="bg-text3" />
+        <img src="./img/bg-text3-mob.svg" alt="" class="bg-text3-mob" />
+        <img src="./img/bottles.svg" alt="" class="partner-bottles" />
+        <img src="./img/bottles-mob.png" alt="" class="partner-bottles-mob" />
+        <div class="partner-btns">
+          <img src="./img/btn-connect.svg" alt="Присоединяйся к нам" class="btn-connect" />
+          <a href="https://t.me/oggoliquid" target="_blank">
+            <img src="./img/btn-partner.svg" alt="Стать партнером" class="btn-partner" />
+          </a>
+        </div>
+      </section>
+      <section class="vkus-block" id="vkus-block">
+        <img src="./img/bg-vkus.svg" alt="" class="bg-vkus" />
+      </section>
+      <section class="flavors-block" id="flavors">
+        <div class="flavors-title-row">
+          <h2 class="flavors-title">Вкусы</h2>
+        </div>
+        <nav class="flavors-menu">
+          <ul>
+            <li data-flavor class="active">Все</li>
+            <li data-flavor>Фрукты</li>
+            <li data-flavor>Ягоды</li>
+            <li data-flavor>Микс</li>
+            <li data-flavor>Скоро</li>
+          </ul>
+        </nav>
+      </section>
+      <div
+        class="cards-row"
+        style="
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-auto-rows: min-content;
+          gap: 32px;
+        "
+      >
+        <div class="card mix" id="card1" style="display: none">
+          <div class="card-left">
+            <div class="card-title">
+              <span>МАРАКУЙЯ</span><br />
+              <span class="card-title-accent">АПЕЛЬСИН</span><br />
+              <span>ГУАВА</span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Экзотика в каждом вдохе: маракуйя, апельсин и гуава создают свежий и сладкий вкус с
+              тропической сочностью и ярким ароматом.
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card1.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card mix new" id="card2" style="display: none">
+          <div class="card-left">
+            <div class="card-title">
+              <span>КИВИ</span><br />
+              <span class="card-title-accent">ЛИМОН</span><br />
+              <span>КЛЮКВА</span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Яркий и освежающий вкус сочного киви с тонкой кислинкой лимона и насыщенной кислинкой
+              клюквы, создающий уникальный баланс.
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card2.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кисло-сладкий</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card mix" id="card3" style="display: none">
+          <div class="card-left">
+            <div class="card-title">
+              <span>АЛОЭ</span><br />
+              <span class="card-title-accent">КЛУБНИКА</span><br />
+              <span>КИВИ</span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Мягкий и освежающий вкус сочного киви с легкой кислинкой, сладкой клубники и нежной
+              травянистой ноткой алоэ.
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card3.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кисло-сладкий</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card berries new" id="card-blueberry-mint" style="display: none">
+          <div class="card-left">
+            <div class="card-title">
+              <span>ЧЕРНИКА</span><br />
+              <span class="card-title-accent">МЯТА</span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Яркое сочетание сладкой черники и освежающей мяты, создающее эффект прохлады и ягодной
+              свежести с легким холодком.
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card4.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Сладкий</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card fruties" id="card-apple">
+          <div class="card-left">
+            <div class="card-title">
+              <span>КИСЛОЕ</span><br />
+              <span class="card-title-accent">ЯБЛОКО</span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Освежающий вкус зелёного яблока с яркой кислинкой, создающий ощущение бодрящей
+              фруктовой свежести и сочности.
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card5.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card berries" id="card-watermelon">
+          <div class="card-left">
+            <div class="card-title">
+              <span>КЛУБНИЧНО</span><br />
+              <span class="card-title-accent">АРБУЗНЫЙ</span><br />
+              <span>ФРЕШ</span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Свежий и сладкий вкус сочной клубники в сочетании с освежающим ароматом арбуза,
+              создающий ощущение летней прохлады.
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card6.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Сладкий</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card mix" id="card-pineapple-raspberry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>КИСЛЫЕ</span><br />
+              <span class="card-title-accent">АНАНАС</span><br />
+              <span>МАЛИНА</span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Яркий и насыщенный вкус сочного ананаса с выраженной кислинкой, дополненный
+              сладковато-кислой нотой, спелой малины
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card7.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card berries" id="card-cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>СЛАДКАЯ</span><br />
+              <span class="card-title-accent">ВИШНЯ</span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Насыщенный и сочный вкус спелой вишни с мягкой сладостью и тонкой фруктовой
+              нотой,вызывающий ощущение теплого лета
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card8.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Сладкий</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card fruties" id="card-kiwi">
+          <div class="card-left">
+            <div class="card-title">
+              <span>КИСЛЫЙ</span><br />
+              <span class="card-title-accent">КИВИ</span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Насыщенный и яркий вкус киви с выраженной кислинкой, создающий взрыв фруктовой
+              свежести и бодрящей прохлады
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card9.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card mix" id="card-aloe-grapes">
+          <div class="card-left">
+            <div class="card-title">
+              <span>АЛОЭ</span><br />
+              <span class="card-title-accent">ВИНОГРАД</span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Легкий и освежающий вкус зеленого винограда с нежной травянистостью алоэ, создающий
+              ощущение природной свежести
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card10.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Сладкий</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card fruties" id="card-mango">
+          <div class="card-left">
+            <div class="card-title">
+              <span>СЛАДКИЙ</span><br />
+              <span class="card-title-accent">МАНГО</span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Насыщенный и сладкий вкус спелого манго с легкой экзотической ноткой, создающий
+              ощущение сочности
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card11.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Сладкий</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card fruties" id="card-pina-colada">
+          <div class="card-left">
+            <div class="card-title">
+              <span>ПИНА</span><br />
+              <span class="card-title-accent">КОЛАДА</span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Экзотическое сочетание кокоса и ананаса с кремовой текстурой и тропической сладостью,
+              создающее ощущение отдыха на пляже
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card12.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Сладкий</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card fruties" id="card-passion-fruit">
+          <div class="card-left">
+            <div class="card-title">
+              <span>ЭНЕРГЕТИК</span><br />
+              <span class="card-title-accent">МАРАКУЙЯ</span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Насыщенный вкус маракуйи с характерной ноткой энергетика, создающий яркий, бодрящий
+              эффект и фруктовую искру
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card13.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Сладкий</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card berries" id="card-raspberry-lemonade">
+          <div class="card-left">
+            <div class="card-title">
+              <span>МАЛИНОВЫЙ</span><br />
+              <span class="card-title-accent">ЛИМОНАД</span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Освежающий вкус кислой малины с лимонной искристостью, создающий ощущение летнего
+              лимонада с ягодной сладостью
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card14.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card fruties" id="card-peach">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Персик</span><br />
+              <span class="card-title-accent"></span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Мягкий и сочный вкус спелого персика с легкой сладостью и бархатистой фруктовой
+              ноткой, создающий ощущение солнечного тепла и нежной свежести
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card15.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card mix" id="card-cola">
+          <div class="card-left">
+            <div class="card-title">
+              <span>МАРМЕЛАДНЫЕ</span><br />
+              <span class="card-title-accent">ЧЕРВЯЧКИ</span><br />
+              <span>С КОЛОЙ</span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Яркий и сладкий вкус жевательного мармелада с нотами карамельной колы, создающий
+              ощущение ягодного смузи
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card16.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Сладкий</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card mix" id="card-grape-soda">
+          <div class="card-left">
+            <div class="card-title">
+              <span>ВИНОГРАДНАЯ</span><br />
+              <span class="card-title-accent">СОДОВАЯ</span><br />
+              <span></span>
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Насыщенный и освежающий вкус спелого винограда с легкой газировкой, создающий ощущение
+              сладкой, пузырящейся ягодной прохлады
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card17.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card mix" id="card-strawberry-banana">
+          <div class="card-left">
+            <div class="card-title">
+              <span>КЛУБНИКА</span><br />
+              <span class="card-title-accent">БАНАН</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Сладкий и сливочный вкус клубники в сочетании с мягкостью спелого банана, создающий
+              ощущение ягодного смузи
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card18.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Сладкий</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card mix" id="card-cranberry-soda">
+          <div class="card-left">
+            <div class="card-title">
+              <span>КЛЮКВЕННАЯ</span><br />
+              <span class="card-title-accent">СОДА</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Освежающий и искристый вкус клюквы с легкой газировкой, создающий ощущение пузырящейся
+              ягодной прохлады
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card19.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card berries" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>КИСЛАЯ</span><br />
+              <span class="card-title-accent">ВИШНЯ</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Насыщенный и бодрящий вкус вишни с выраженной кислинкой, создающий яркое ощущение
+              свкжести
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card20.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Апельсин</span><br />
+              <span class="card-title-accent">ВИШНЯ</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Яркий и насыщенный вкус сладкого апельсина с лёгкой цитрусовой искристостью,
+              дополненный сочной вишнёй, создающий эффект фруктовой свежести и яркой сладости
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card21.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Банан</span><br />
+              <span class="card-title-accent">Манго</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Сливочный и тропический вкус спелого банана в сочетании с насыщенной сладостью манго,
+              создающий ощущение экзотического смузи и летнего уюта
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card22.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Земляничный</span><br />
+              <span class="card-title-accent">Мохито</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Свежий и лёгкий вкус сладкой земляники с мятной прохладой и лёгкой цитрусовой искрой,
+              создающий ощущение летнего коктейля и освежающего настроения
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card23.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Вишневая</span><br />
+              <span>газировка </span><br />
+              <span class="card-title-accent">Mountain Dew</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Бодрящий вкус вишни с искрящимися нотами газировки в стиле Mountain Dew, создающий
+              эффект энергетического всплеска и ягодной свежести
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card24.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Киви</span><br />
+              <span class="card-title-accent">Ананас</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Освежающее и тропическое сочетание кисло-сладкого киви и сочного ананаса, создающее
+              яркое ощущение фруктовой бодрости и прохлады
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card25.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Кислые</span><br />
+              <span class="card-title-accent">Мармеладные</span><br />
+              <span class="card-title-accent">Мишки</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Яркий и игривый вкус разноцветных мармеладных мишек с выраженной кислинкой, создающий
+              весёлое ощущение сладкой кислотной радуги
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card26.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Кислые</span><br />
+              <span class="card-title-accent">Яблочные</span><br />
+              <span class="card-title-accent">Конфеты</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Насыщенный вкус зелёного яблока с яркой кислинкой и карамельной сладостью, создающий
+              эффект классических кислых леденцов
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card27.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Кислый</span><br />
+              <span class="card-title-accent">Арбуз</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Освежающий и сочный вкус арбуза с неожиданной и яркой кислинкой, создающий ощущение
+              фруктового взрыва и летней прохлады
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card28.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Кислый</span><br />
+              <span class="card-title-accent">Виноградный</span><br />
+              <span class="card-title-accent">Чупа-Чупс</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Насыщенный вкус винограда в формате карамельной конфеты с яркой кислинкой, вызывающий
+              ассоциации с детскими леденцами и сладкой ностальгией
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card29.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Кислый</span><br />
+              <span class="card-title-accent">Скиттлс</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Взрывной вкус радужных конфет с фруктовой основой и интенсивной кислинкой, создающий
+              эффект яркого сладко-кислого наслаждения
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card30.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Лайм</span><br />
+              <span class="card-title-accent">Яблоко</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Кисло-сладкое сочетание сочного лайма и зелёного яблока, создающее ощущение прохлады,
+              бодрости и цитрусовой свежести
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card31.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Кислая</span><br />
+              <span>Клюква</span><br />
+              <span class="card-title-accent">Лимон</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Бодрящее сочетание яркой кислоты клюквы и цитрусовой резкости лимона, создающее эффект
+              освежающей фруктовой энергии
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card32.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Лесной</span><br />
+              <span class="card-title-accent">Морс</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Насыщенный и освежающий вкус северных ягод — клюквы, черники и брусники — в одном
+              морсе, создающий ощущение прохлады и натуральной кисло-сладости
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card33.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Кислый</span><br />
+              <span class="card-title-accent">Мандарин</span><br />
+              <span class="card-title-accent">Киви</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Сочный и яркий вкус мандарина с цитрусовой сладостью, дополненный кислым акцентом
+              киви, создающий фруктовую гармонию с лёгкой дерзостью
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card34.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Мятная</span><br />
+              <span class="card-title-accent">Жвачка</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Свежий и охлаждающий вкус классической мятной жвачки с лёгкой сладостью, создающий
+              ощущение чистоты и долгой прохлады
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card35.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Персик</span><br />
+              <span class="card-title-accent">Груша</span><br />
+              <span class="card-title-accent">Дыня</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Мягкое и нежное сочетание сочного персика, сладкой груши и ароматной дыни, создающее
+              ощущение тёплой фруктовой мягкости и утончённой сладости
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card36.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Цитрусовый</span><br />
+              <span class="card-title-accent">Микс</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Бодрящее сочетание апельсина, лимона, лайма и грейпфрута, создающее яркий, свежий и
+              взрывной цитрусовый коктейль
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card37.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Энергетик</span><br />
+              <span class="card-title-accent">Киви</span><br />
+              <span class="card-title-accent">Яблоко</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Фруктовый вкус зелёного яблока и киви с энергичным послевкусием, создающий эффект
+              бодрости с яркой кисло-сладкой нотой
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card38.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Ягодный</span><br />
+              <span class="card-title-accent">Orbit</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Свежий вкус ягодной жвачки с лёгкой сладостью и прохладной ноткой, создающий ощущение
+              чистоты, свежести и фруктовой нежности
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card39.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+        <div class="card soon" id="card-cour cherry">
+          <div class="card-left">
+            <div class="card-title">
+              <span>Энергетик с</span><br />
+              <span class="card-title-accent">Лесными</span><br />
+              <span class="card-title-accent">Ягодами</span><br />
+            </div>
+            <div class="card-underline"></div>
+            <div class="card-desc">
+              Насыщенное сочетание тёмных ягод с характерной нотой энергетика, создающее глубокий,
+              яркий и бодрящий вкус
+            </div>
+            <img
+              src="./img/view-more.svg"
+              alt="Смотреть полностью"
+              class="card-view-more js-card-view-more"
+            />
+          </div>
+          <img src="./img/img-card40.png" alt="OGGO Card" class="card-img-abs" />
+          <div class="card-more">
+            <div class="card-more-line"></div>
+            <div class="card-more-info">
+              <div class="card-more-row">
+                <span>Кол-во никотина</span><span class="card-more-accent">20Mg</span>
+              </div>
+              <div class="card-more-row">
+                <span>Крепкость</span><span class="card-more-accent">Medium</span>
+              </div>
+              <div class="card-more-row">
+                <span>Объем</span><span class="card-more-accent">30Ml</span>
+              </div>
+              <div class="card-more-row">
+                <span>Вкус</span><span class="card-more-accent">Кислый</span>
+              </div>
+            </div>
+            <img src="./img/view-close.svg" alt="Свернуть" class="card-close js-card-close" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="dop-block">
+      <img src="./img/bg-dop.png" alt="Дополнительный доход OGGO" class="bg-dop-img" />
+      <a href="https://t.me/oggoliquid" target="_blank" class="btn-go-link"
+        ><img src="./img/btn-go.svg" alt="Перейти" class="btn-go-img"
+      /></a>
+    </section>
+    <div class="dop-bg-down-wrap">
+      <img src="./img/bg-dop-down.svg" alt="Всплеск фон" class="bg-dop-down" />
+    </div>
+    <div class="fake-block" id="fake-block">
+      <img src="./img/fake-wave.png" alt="" class="fake-wave-img" />
+      <img src="./img/fake.png" alt="FAKE - остерегайтесь копий!" class="fake-img" />
+      <img src="./img/fake-mob.png" alt="FAKE - остерегайтесь копий!" class="fake-img-mob" />
+    </div>
+    <section class="telegram-block">
+      <div class="telegram-block-inner">
+        <img src="./img/bg-text5.svg" alt="OGGO Telegram" class="bg-text5-img" />
+        <a href="https://t.me/oggoliquid" target="_blank" class="btn-tg-link"
+          ><img src="./img/btn-tg.svg" alt="Телеграм канал OGGO" class="btn-tg-img"
+        /></a>
+        <img src="./img/bottles-down.svg" alt="OGGO Bottles" class="bottles-down-img" />
+        <img
+          src="./img/bottles-down-mob.png"
+          alt="OGGO Bottles Mobile"
+          class="bottles-down-mob-img"
+        />
+      </div>
+    </section>
+    <div class="bg-down-wrap">
+      <img src="./img/bg-down.svg" alt="Фоновые брызги внизу" class="bg-down-img" />
+    </div>
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-logo-down-row">
+          <img src="./img/logo-down.png" alt="OGGO Logo" class="footer-logo-down" />
+        </div>
+        <div class="footer-col social">
+          <div class="footer-col-title footer-social">Социальные сети</div>
+          <a href="https://t.me/oggoliquid" target="_blank" class="footer-link">Телеграмм</a>
+          <a
+            href="https://www.instagram.com/oggomedia?igsh=OWM1MGxvNXY4YWtp"
+            target="_blank"
+            class="footer-link"
+            >Инстаграм</a
+          >
+        </div>
+        <div class="footer-col docs">
+          <div class="footer-col-title footer-social">Документы</div>
+          <a href="#" class="footer-link">Политика конфиденциальности</a>
+          <a href="https://disk.yandex.ru/d/dgp4ZqCgly8B3w" class="footer-link">Промо-материалы</a>
+          <a href="#" class="footer-link">Публичная оферта</a>
+        </div>
+        <div class="footer-col nav">
+          <div class="footer-col-title">Навигация</div>
+          <a href="#" class="footer-link">Главная</a>
+          <a href="#" class="footer-link">О нас</a>
+          <a href="#" class="footer-link">Линейки</a>
+          <a href="#fake-block" class="footer-link">Остерегайтесь копии</a>
+          <a href="./partner.html" class="footer-link">Дистрибьюторы</a>
+        </div>
+        <div class="footer-disclaimer">
+          Доступ к сайту разрешён только лицам старше 18 лет, являющимся потребителями табака или
+          иной никотинсодержащей продукции, которые не противоречат случаю продажи/отдачи
+          курительных или никотинсодержащих продуктов. Данный сайт не является рекламой, а служит
+          лишь для предоставления достоверной информации о свойствах, характеристиках продукции и не
+          является её заказом/сделкой. Ст. 1 п. 1, ст. 2 п.10 Закона «О защите прав потребителей».
+          Дистанционная продажа и доставка никотинсодержащей продукции не осуществляется.
+        </div>
+        <div class="footer-age">18+</div>
+      </div>
+    </footer>
+    <div class="preloader">
+      <div class="loader"></div>
+      <div class="preloader-text">Загрузка...</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
