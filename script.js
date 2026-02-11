@@ -85,7 +85,7 @@ window.addEventListener('DOMContentLoaded', function () {
   if (firstFlavor && !firstFlavor.classList.contains('active')) {
     firstFlavor.classList.add('active');
   }
-  // Показываем все карточки по умолчанию (категория "Все"), исключая "soon" и "prime"
+  // Показываем все карточки по умолчанию (категория "Premium"), исключая "soon" и "prime"
   const cards = Array.from(document.querySelectorAll('.card'));
   const defaultCards = cards.filter((card) => !card.classList.contains('soon') && !card.classList.contains('prime'));
   cards.forEach((card) => {
@@ -147,19 +147,6 @@ document.querySelectorAll('.flavors-menu li[data-flavor]').forEach((link) => {
     const flavor = this.textContent.trim().toLowerCase();
     const cards = Array.from(document.querySelectorAll('.card'));
     let filteredCards = [];
-    if (flavor === 'скоро') {
-      cards.forEach((card) => {
-        if (card.classList.contains('soon')) {
-          filteredCards.push(card);
-        }
-        card.style.display = 'none';
-      });
-      filteredCards.forEach((card, i) => {
-        card.style.display = i < 4 ? '' : 'none';
-      });
-      showMoreButton(filteredCards);
-      return;
-    }
     if (flavor === 'prime') {
       cards.forEach((card) => {
         if (card.classList.contains('prime')) {
@@ -173,34 +160,14 @@ document.querySelectorAll('.flavors-menu li[data-flavor]').forEach((link) => {
       showMoreButton(filteredCards);
       return;
     }
-    if (flavor === 'все') {
-      filteredCards = cards.filter((card) => !card.classList.contains('soon') && !card.classList.contains('prime'));
-      cards.forEach((card) => (card.style.display = 'none'));
-      filteredCards.forEach((card, i) => {
-        card.style.display = i < 4 ? '' : 'none';
-      });
-      showMoreButton(filteredCards);
-      return;
-    } else {
-      cards.forEach((card) => {
-        let shouldShow = false;
-        if (flavor === 'фрукты' && card.classList.contains('fruties')) {
-          shouldShow = true;
-        } else if (flavor === 'микс' && card.classList.contains('mix')) {
-          shouldShow = true;
-        } else if (flavor === 'ягоды' && card.classList.contains('berries')) {
-          shouldShow = true;
-        } else if (flavor === 'новинки' && card.classList.contains('new')) {
-          shouldShow = true;
-        }
-        if (card.classList.contains('soon') || card.classList.contains('prime')) {
-          card.style.display = 'none';
-          return;
-        }
-        card.style.display = 'none';
-        if (shouldShow) filteredCards.push(card);
-      });
-    }
+    // Premium — показываем все карточки кроме "soon" и "prime"
+    filteredCards = cards.filter((card) => !card.classList.contains('soon') && !card.classList.contains('prime'));
+    cards.forEach((card) => (card.style.display = 'none'));
+    filteredCards.forEach((card, i) => {
+      card.style.display = i < 4 ? '' : 'none';
+    });
+    showMoreButton(filteredCards);
+    return;
     filteredCards.forEach((card, i) => {
       card.style.display = i < 4 ? '' : 'none';
     });
