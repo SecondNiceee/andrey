@@ -47,30 +47,11 @@ document.querySelectorAll('.mobile-menu__link').forEach((link) => {
     }
   });
 });
-// Функция для изменения стиля cards-row в зависимости от размера экрана
+// Функция для обновления layout (CSS медиа-запросы обрабатывают стили)
 function updateCardsRowStyle() {
   const cardsRow = document.querySelector('.cards-row');
   if (cardsRow) {
-    if (window.innerWidth <= 900) {
-      // Мобильная версия - flex
-      cardsRow.style.display = 'flex';
-      cardsRow.style.flexWrap = 'wrap';
-      cardsRow.style.justifyContent = 'center';
-      cardsRow.style.gap = '10px';
-      // Убираем grid свойства
-      cardsRow.style.gridTemplateColumns = '';
-      cardsRow.style.gridAutoRows = '';
-    } else {
-      // Десктопная версия - grid
-      cardsRow.style.display = 'grid';
-      cardsRow.style.gridTemplateColumns = '1fr 1fr';
-      cardsRow.style.gridAutoRows = 'min-content';
-      cardsRow.style.gap = '32px';
-      // Убираем flex свойства
-      cardsRow.style.flexWrap = '';
-      cardsRow.style.justifyContent = '';
-    }
-    // Принудительно обновляем layout
+    // Принудительный reflow для обновления layout после изменения DOM
     void cardsRow.offsetHeight;
   }
 }
@@ -188,6 +169,7 @@ function filterCards(flavor) {
   });
 
   // Показываем первые 4 отфильтрованные карточки явно
+  console.log('[v0] Filtering cards for flavor:', flavor, 'Total filtered:', filteredCards.length);
   if (filteredCards.length > 0) {
     for (var i = 0; i < Math.min(4, filteredCards.length); i++) {
       var card = filteredCards[i];
@@ -195,10 +177,18 @@ function filterCards(flavor) {
       // Пересчитываем анимацию после показа (trigger reflow)
       void card.offsetWidth;
       card.style.animation = '';
+      console.log('[v0] Card', i, 'displayed:', card.id);
     }
   }
 
   showMoreButton(filteredCards);
+  
+  // Принудительный reflow для обновления layout
+  var cardsRow = document.querySelector('.cards-row');
+  if (cardsRow) {
+    console.log('[v0] CardsRow computed style - display:', window.getComputedStyle(cardsRow).display, 'gap:', window.getComputedStyle(cardsRow).gap);
+    void cardsRow.offsetHeight;
+  }
 }
 
 // Обработчик фильтрации вкусов
