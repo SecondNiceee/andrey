@@ -70,6 +70,8 @@ function updateCardsRowStyle() {
       cardsRow.style.flexWrap = '';
       cardsRow.style.justifyContent = '';
     }
+    // Принудительно обновляем layout
+    void cardsRow.offsetHeight;
   }
 }
 
@@ -101,6 +103,13 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // Показываем карточки по умолчанию (категория "Premium")
   filterCards('premium');
+  
+  // Обновляем первый пункт меню как активный
+  var premiumLink = Array.from(document.querySelectorAll('.flavors-menu li[data-flavor]'))[0];
+  if (premiumLink) {
+    premiumLink.classList.add('active');
+  }
+  
   if (window.innerWidth < 432) {
     document.querySelectorAll('.bottles-down-mob-img').forEach((el) => {
       el.classList.add('visible');
@@ -121,6 +130,7 @@ function showMoreButton(categoryCards) {
   // Удаляем старую кнопку, если есть
   let oldBtn = document.getElementById('showMoreBtn');
   if (oldBtn) oldBtn.remove();
+  
   if (categoryCards.length > 4) {
     const btn = document.createElement('img');
     btn.src = './img/show-more.svg';
@@ -131,9 +141,15 @@ function showMoreButton(categoryCards) {
     btn.style.cursor = 'pointer';
     const cardsRow = document.querySelector('.cards-row');
     cardsRow.parentNode.insertBefore(btn, cardsRow.nextSibling);
+    
     btn.addEventListener('click', function () {
-      categoryCards.forEach((card) => (card.style.display = ''));
+      // Явно показываем все карточки
+      categoryCards.forEach((card) => {
+        card.style.display = 'block';
+      });
       btn.remove();
+      // Принудительно обновляем layout
+      void cardsRow.offsetHeight;
     });
   }
 }
@@ -143,10 +159,8 @@ function filterCards(flavor) {
   const cards = Array.from(document.querySelectorAll('.cards-row > .card'));
   let filteredCards = [];
 
-  // Сначала скрываем ВСЕ карточки
+  // Закрываем открытые карточки при переключении
   cards.forEach(function(card) {
-    card.style.display = 'none';
-    // Закрываем открытые карточки при переключении
     card.classList.remove('open');
     var more = card.querySelector('.card-more');
     if (more) more.classList.remove('open');
@@ -166,10 +180,23 @@ function filterCards(flavor) {
     });
   }
 
-  // Показываем первые 4 карточки
-  filteredCards.forEach(function(card, i) {
-    card.style.display = i < 4 ? '' : 'none';
+  // Сначала скрываем ВСЕ карточки
+  cards.forEach(function(card) {
+    card.style.display = 'none';
+    // Убираем анимацию для скрытых карточек
+    card.style.animation = 'none';
   });
+
+  // Показываем первые 4 отфильтрованные карточки явно
+  if (filteredCards.length > 0) {
+    for (var i = 0; i < Math.min(4, filteredCards.length); i++) {
+      var card = filteredCards[i];
+      card.style.display = 'block';
+      // Пересчитываем анимацию после показа (trigger reflow)
+      void card.offsetWidth;
+      card.style.animation = '';
+    }
+  }
 
   showMoreButton(filteredCards);
 }
@@ -182,7 +209,14 @@ document.querySelectorAll('.flavors-menu li[data-flavor]').forEach(function(link
       .forEach(function(l) { l.classList.remove('active'); });
     this.classList.add('active');
     var flavor = this.textContent.trim().toLowerCase();
-    filterCards(flavor);
+    
+    // Используем requestAnimationFrame для гарантированного правильного рендера
+    requestAnimationFrame(function() {
+      filterCards(flavor);
+      // Принудительный reflow для обновления layout
+      var cardsRow = document.querySelector('.cards-row');
+      void cardsRow.offsetHeight;
+    });
   });
 });
 
