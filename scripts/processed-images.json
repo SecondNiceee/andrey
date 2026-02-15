@@ -1,0 +1,577 @@
+[
+  {
+    "oldName": "bg-dop.png",
+    "newName": "bg-dop.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "bg-par.png",
+    "newName": "bg-par.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "block-premium.png",
+    "newName": "block-premium.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "bottle1.png",
+    "newName": "bottle1.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "bottle2.png",
+    "newName": "bottle2.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "bottles-down-mob.png",
+    "newName": "bottles-down-mob.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "bottles-mob.png",
+    "newName": "bottles-mob.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "btn-parr.png",
+    "newName": "btn-parr.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "fake-mob.png",
+    "newName": "fake-mob.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "fake-wave.png",
+    "newName": "fake-wave.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "fake.png",
+    "newName": "fake.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "hero-partner.png",
+    "newName": "hero-partner.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-energetik-adrenalin-new.png",
+    "newName": "img-card-prime-energetik-adrenalin-new.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-energetik-adrenalin.png",
+    "newName": "img-card-prime-energetik-adrenalin.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-energetik-ananas.png",
+    "newName": "img-card-prime-energetik-ananas.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-energetik-arbuz-kivi.png",
+    "newName": "img-card-prime-energetik-arbuz-kivi.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-energetik-granat.png",
+    "newName": "img-card-prime-energetik-granat.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-energetik-klubnika-malina.png",
+    "newName": "img-card-prime-energetik-klubnika-malina.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-energetik-mango-marakuya.png",
+    "newName": "img-card-prime-energetik-mango-marakuya.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-energetik-persik-mango.png",
+    "newName": "img-card-prime-energetik-persik-mango.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-energetik-smorodina.png",
+    "newName": "img-card-prime-energetik-smorodina.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-energetik-vinograd-new.png",
+    "newName": "img-card-prime-energetik-vinograd-new.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-energetik-vinograd.png",
+    "newName": "img-card-prime-energetik-vinograd.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-energetik-vishnya.png",
+    "newName": "img-card-prime-energetik-vishnya.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-ezhevika-myata-new.png",
+    "newName": "img-card-prime-ezhevika-myata-new.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-ezhevika-myata.png",
+    "newName": "img-card-prime-ezhevika-myata.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-five-sladkie-yagody.png",
+    "newName": "img-card-prime-five-sladkie-yagody.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-fruktovaya-zhvachka-juicy-fruit.png",
+    "newName": "img-card-prime-fruktovaya-zhvachka-juicy-fruit.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-granat-ananas-new.png",
+    "newName": "img-card-prime-granat-ananas-new.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-granat-ananas.png",
+    "newName": "img-card-prime-granat-ananas.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-greypfrut-kivi-new.png",
+    "newName": "img-card-prime-greypfrut-kivi-new.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-greypfrut-kivi.png",
+    "newName": "img-card-prime-greypfrut-kivi.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-kislaya-apelsinovaya-shipuchka-new.png",
+    "newName": "img-card-prime-kislaya-apelsinovaya-shipuchka-new.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-kislaya-apelsinovaya-shipuchka.png",
+    "newName": "img-card-prime-kislaya-apelsinovaya-shipuchka.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-kislaya-malinovaya-vata.png",
+    "newName": "img-card-prime-kislaya-malinovaya-vata.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-kislaya-vinogradnaya-fanta.png",
+    "newName": "img-card-prime-kislaya-vinogradnaya-fanta.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-kislyy-ananas-malina.png",
+    "newName": "img-card-prime-kislyy-ananas-malina.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-kislyy-barbaris.png",
+    "newName": "img-card-prime-kislyy-barbaris.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-kislyy-mentos-vishnya.png",
+    "newName": "img-card-prime-kislyy-mentos-vishnya.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-kislyy-mountain-dew.png",
+    "newName": "img-card-prime-kislyy-mountain-dew.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-kislyy-tropicheskiy-miks-new.png",
+    "newName": "img-card-prime-kislyy-tropicheskiy-miks-new.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-kislyy-tropicheskiy-miks.png",
+    "newName": "img-card-prime-kislyy-tropicheskiy-miks.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-kislyy-vinograd-mango.png",
+    "newName": "img-card-prime-kislyy-vinograd-mango.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-kislyy-yablochnyy-shok.png",
+    "newName": "img-card-prime-kislyy-yablochnyy-shok.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-kivi-banan.png",
+    "newName": "img-card-prime-kivi-banan.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-klubnichno-bananovaya-eclipse.png",
+    "newName": "img-card-prime-klubnichno-bananovaya-eclipse.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-ledyanoy-grusheviy-limonad.png",
+    "newName": "img-card-prime-ledyanoy-grusheviy-limonad.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-love-is-ananas-kokos-new.png",
+    "newName": "img-card-prime-love-is-ananas-kokos-new.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-love-is-ananas-kokos.png",
+    "newName": "img-card-prime-love-is-ananas-kokos.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-morozniy-sprayt.png",
+    "newName": "img-card-prime-morozniy-sprayt.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-orbit-babl-mint.png",
+    "newName": "img-card-prime-orbit-babl-mint.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-persikovaya-huba-buba-new.png",
+    "newName": "img-card-prime-persikovaya-huba-buba-new.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-persikovaya-huba-buba.png",
+    "newName": "img-card-prime-persikovaya-huba-buba.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-smorodina-grusha.png",
+    "newName": "img-card-prime-smorodina-grusha.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-trident-malina-limon.png",
+    "newName": "img-card-prime-trident-malina-limon.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-turbo-yabloko-apelsin.png",
+    "newName": "img-card-prime-turbo-yabloko-apelsin.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-vinogradniy-dirol.png",
+    "newName": "img-card-prime-vinogradniy-dirol.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-vishneviy-mentos-new.png",
+    "newName": "img-card-prime-vishneviy-mentos-new.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime-vishneviy-mentos.png",
+    "newName": "img-card-prime-vishneviy-mentos.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime1.png",
+    "newName": "img-card-prime1.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime2.png",
+    "newName": "img-card-prime2.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card-prime3.png",
+    "newName": "img-card-prime3.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card1.png",
+    "newName": "img-card1.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card10.png",
+    "newName": "img-card10.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card11.png",
+    "newName": "img-card11.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card12.png",
+    "newName": "img-card12.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card13.png",
+    "newName": "img-card13.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card14.png",
+    "newName": "img-card14.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card15.png",
+    "newName": "img-card15.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card16.png",
+    "newName": "img-card16.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card17.png",
+    "newName": "img-card17.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card18.png",
+    "newName": "img-card18.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card19.png",
+    "newName": "img-card19.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card2.png",
+    "newName": "img-card2.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card20.png",
+    "newName": "img-card20.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card21.png",
+    "newName": "img-card21.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card22.png",
+    "newName": "img-card22.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card23.png",
+    "newName": "img-card23.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card24.png",
+    "newName": "img-card24.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card25.png",
+    "newName": "img-card25.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card26.png",
+    "newName": "img-card26.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card27.png",
+    "newName": "img-card27.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card28.png",
+    "newName": "img-card28.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card29.png",
+    "newName": "img-card29.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card3.png",
+    "newName": "img-card3.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card30.png",
+    "newName": "img-card30.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card31.png",
+    "newName": "img-card31.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card32.png",
+    "newName": "img-card32.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card33.png",
+    "newName": "img-card33.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card34.png",
+    "newName": "img-card34.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card35.png",
+    "newName": "img-card35.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card36.png",
+    "newName": "img-card36.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card37.png",
+    "newName": "img-card37.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card38.png",
+    "newName": "img-card38.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card39.png",
+    "newName": "img-card39.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card4.png",
+    "newName": "img-card4.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card40.png",
+    "newName": "img-card40.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card5.png",
+    "newName": "img-card5.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card6.png",
+    "newName": "img-card6.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card7.png",
+    "newName": "img-card7.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card8.png",
+    "newName": "img-card8.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card9.png",
+    "newName": "img-card9.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "logo-down.png",
+    "newName": "logo-down.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "logo-par1.png",
+    "newName": "logo-par1.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "logo-par2.png",
+    "newName": "logo-par2.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "logo-par3.png",
+    "newName": "logo-par3.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "logo-par4.png",
+    "newName": "logo-par4.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "logo.png",
+    "newName": "logo.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "par-card1.png",
+    "newName": "par-card1.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "par-card2.png",
+    "newName": "par-card2.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "par-card3.png",
+    "newName": "par-card3.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "par-card4.png",
+    "newName": "par-card4.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "par-card5.png",
+    "newName": "par-card5.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "par-card6.png",
+    "newName": "par-card6.webp",
+    "dir": "img"
+  },
+  {
+    "oldName": "img-card9.jpg",
+    "newName": "img-card9.webp",
+    "dir": "img-no"
+  }
+]
