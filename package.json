@@ -7,7 +7,10 @@
   "scripts": {
     "convert-prime-webp": "node scripts/convert-prime-to-webp.js",
     "update-html-webp": "node scripts/update-html-to-webp.js",
-    "optimize-images": "npm run convert-prime-webp && npm run update-html-webp"
+    "convert-all-webp": "node scripts/convert-all-to-webp.js",
+    "update-all-html-webp": "node scripts/update-all-html-to-webp.js",
+    "optimize-images": "npm run convert-all-webp && npm run update-all-html-webp",
+    "optimize-prime-only": "npm run convert-prime-webp && npm run update-html-webp"
   },
   "devDependencies": {
     "sharp": "^0.32.0"
