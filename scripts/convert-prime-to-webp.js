@@ -64,8 +64,9 @@ async function convertToWebP() {
   const rootDir = path.join(__dirname, '..');
   let successCount = 0;
   let errorCount = 0;
+  const maxWidth = 600; // Максимальная ширина картинки в пикселях
 
-  console.log('🚀 Начинаю конвертацию картинок Prime в WebP...\n');
+  console.log('🚀 Начинаю конвертацию картинок Prime в WebP (размер: 600px)...\n');
 
   for (const imagePath of primeImages) {
     const fullPath = path.join(rootDir, imagePath);
@@ -75,12 +76,16 @@ async function convertToWebP() {
       // Проверяем существует ли исходный файл
       await fs.access(fullPath);
 
-      // Конвертируем в WebP
+      // Конвертируем в WebP с ресайзом до 600px и перезаписью файла
       await sharp(fullPath)
-        .webp({ quality: 80 })
+        .resize(maxWidth, maxWidth, {
+          fit: 'inside', // Сохраняет пропорции, не обрезает
+          withoutEnlargement: true // Не увеличивает если оригинал меньше
+        })
+        .webp({ quality: 85 })
         .toFile(webpPath);
 
-      console.log(`✅ ${imagePath} → ${path.basename(webpPath)}`);
+      console.log(`✅ ${imagePath} → ${path.basename(webpPath)} (600px)`);
       successCount++;
     } catch (error) {
       console.log(`❌ Ошибка при обработке ${imagePath}: ${error.message}`);
@@ -89,8 +94,9 @@ async function convertToWebP() {
   }
 
   console.log(`\n✨ Конвертация завершена!`);
-  console.log(`✅ Успешно: ${successCount}`);
+  console.log(`✅ Успешно обработано: ${successCount}`);
   console.log(`❌ Ошибок: ${errorCount}`);
+  console.log(`📐 Все картинки ресайзены до 600px максимума`);
 }
 
 convertToWebP().catch(console.error);
