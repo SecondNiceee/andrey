@@ -9,6 +9,9 @@
     "update-html-webp": "node scripts/update-html-to-webp.js",
     "convert-all-webp": "node scripts/convert-all-to-webp.js",
     "update-all-html-webp": "node scripts/update-all-html-to-webp.js",
+    "update-html-comprehensive": "node scripts/update-html-comprehensive.js",
+    "delete-png": "node scripts/delete-old-png.js",
+    "migrate-to-webp": "node scripts/full-migration-to-webp.js",
     "optimize-images": "npm run convert-all-webp && npm run update-all-html-webp",
     "optimize-prime-only": "npm run convert-prime-webp && npm run update-html-webp"
   },
