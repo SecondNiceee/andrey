@@ -371,26 +371,4 @@ function animateOnScroll() {
 window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('DOMContentLoaded', animateOnScroll);
 
-// Прелоадер
-window.addEventListener('load', function () {
-  const preloader = document.querySelector('.preloader');
-  setTimeout(function () {
-    preloader.classList.add('hidden');
 
-    // Удаляем прелоадер из DOM после завершения анимации
-    setTimeout(function () {
-      preloader.remove();
-    }, 500);
-  }, 1000); // Минимальное время показа прелоадера - 1 секунда
-});
-
-// Альтернатива на случай, если событие load не сработает
-setTimeout(function () {
-  const preloader = document.querySelector('.preloader');
-  if (preloader) {
-    preloader.classList.add('hidden');
-    setTimeout(function () {
-      preloader.remove();
-    }, 500);
-  }
-}, 5000); // Максимальное время - 5 секунд

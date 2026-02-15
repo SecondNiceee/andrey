@@ -1,0 +1,23 @@
+{
+  "name": "oggo-menu",
+  "version": "1.0.0",
+  "description": "OGGO Menu - Premium liquid products catalog",
+  "type": "module",
+  "main": "script.js",
+  "scripts": {
+    "convert-prime-webp": "node scripts/convert-prime-to-webp.js",
+    "update-html-webp": "node scripts/update-html-to-webp.js",
+    "optimize-images": "npm run convert-prime-webp && npm run update-html-webp"
+  },
+  "devDependencies": {
+    "sharp": "^0.32.0"
+  },
+  "keywords": [
+    "oggo",
+    "menu",
+    "premium",
+    "liquid"
+  ],
+  "author": "OGGO Team",
+  "license": "MIT"
+}
