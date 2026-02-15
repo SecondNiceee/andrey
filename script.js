@@ -73,6 +73,24 @@ function updateCardsRowStyle() {
   }
 }
 
+// Настройка обработчиков возраста ДО загрузки страницы
+const ageYesBtn = document.getElementById('ageYesBtn');
+const ageNoBtn = document.getElementById('ageNoBtn');
+const ageModal = document.getElementById('ageModal');
+
+if (ageYesBtn && ageNoBtn && ageModal) {
+  ageYesBtn.onclick = function (e) {
+    e.preventDefault();
+    ageModal.style.display = 'none';
+    document.body.style.overflow = '';
+  };
+  
+  ageNoBtn.onclick = function (e) {
+    e.preventDefault();
+    window.location.href = 'https://www.google.com/';
+  };
+}
+
 // Вызываем функцию при загрузке страницы
 window.addEventListener('DOMContentLoaded', function () {
   setTimeout(function () {
@@ -88,16 +106,11 @@ window.addEventListener('DOMContentLoaded', function () {
       el.classList.add('visible');
     });
   }
-  // Проверка возраста (теперь всегда показываем модалку)
-  document.getElementById('ageModal').style.display = 'flex';
-  document.body.style.overflow = 'hidden';
-  document.getElementById('ageYesBtn').onclick = function () {
-    document.getElementById('ageModal').style.display = 'none';
-    document.body.style.overflow = '';
-  };
-  document.getElementById('ageNoBtn').onclick = function () {
-    window.location.href = 'https://www.google.com/';
-  };
+  // Показываем модалку возраста
+  if (ageModal) {
+    ageModal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
 });
 
 // Вызываем функцию при изменении размера окна
